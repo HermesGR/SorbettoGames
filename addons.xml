@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="plugin.program.sorbetto.games" name="Sorbetto Retro Games" version="1.0.0" provider-name="Sorbetto">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="game.libretro.pcsx-rearmed" optional="true"/>
+            <import addon="game.libretro.swanstation" optional="true"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py">
+            <provides>game executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="el">Sorbetto Retro Games Launcher</summary>
+            <description lang="el">Παίξτε τα ρετρό παιχνίδια σας με ένα κλικ απευθείας από το build σας.</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+</addons>
