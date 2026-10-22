@@ -1,0 +1,32 @@
+name: Diagnose SorbettoGames plugin zip
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download plugin zip
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/SorbettoGames/main/plugin.program.sorbetto.games-1.0.4.zip" -o plugin.zip
+          ls -la plugin.zip
+
+      - name: Test zip integrity
+        run: |
+          unzip -t plugin.zip
+
+      - name: List zip contents
+        run: |
+          unzip -l plugin.zip
+
+      - name: Extract and show addon.xml files
+        run: |
+          rm -rf extract
+          mkdir extract
+          cd extract
+          unzip -o ../plugin.zip
+          echo '=== All files ==='
+          find . -type f -print
+          echo '=== addon.xml contents ==='
+          find . -name addon.xml -exec sh -c 'echo "--- $1 ---"; cat "$1"' _ {} \;
