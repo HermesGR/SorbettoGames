@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <addons>
-<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.11' provider-name='HermesGR'>
+<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.12' provider-name='HermesGR'>
   <requires><import addon='xbmc.python' version='3.0.0' /></requires>
   <extension point='xbmc.python.script' library='addon.py' />
   <extension point='xbmc.addon.metadata'>
