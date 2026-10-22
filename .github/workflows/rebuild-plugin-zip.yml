@@ -1,0 +1,41 @@
+name: Rebuild plugin 1.0.5 zip
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild plugin ZIP with addon.xml at root and version 1.0.5
+        run: |
+          set -e
+          ZIP=plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
+          rm -rf /tmp/rebuild
+          mkdir -p /tmp/rebuild/extract /tmp/rebuild/stage
+          unzip -q "$ZIP" -d /tmp/rebuild/extract
+          find /tmp/rebuild/extract -name addon.xml -type f -print
+          ADDON_DIR=$(dirname "$(find /tmp/rebuild/extract -name addon.xml -type f | head -n 1)")
+          echo "Addon dir: $ADDON_DIR"
+          cp -a "$ADDON_DIR"/. /tmp/rebuild/stage/
+          sed -i "s/version='1.0.4'/version='1.0.5'/g; s/version=\"1.0.4\"/version=\"1.0.5\"/g" /tmp/rebuild/stage/addon.xml
+          grep -n 'version=' /tmp/rebuild/stage/addon.xml
+          cd /tmp/rebuild/stage
+          zip -qr /tmp/rebuild/plugin.program.sorbetto.games-1.0.5.zip .
+          cd "$GITHUB_WORKSPACE"
+          cp -f /tmp/rebuild/plugin.program.sorbetto.games-1.0.5.zip "$ZIP"
+          unzip -l "$ZIP"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
+          git commit -m "Rebuild plugin 1.0.5 zip with addon.xml at root and correct version" || true
+          git push
