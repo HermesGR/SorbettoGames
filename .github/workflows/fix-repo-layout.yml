@@ -16,14 +16,22 @@ jobs:
       - name: Move add-on packages into Kodi-expected folders
         run: |
           mkdir -p plugin.program.sorbetto.games repository.sorbetto.games
-          git mv plugin.program.sorbetto.games-1.0.5.zip plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
-          git mv repository.sorbetto.games-1.0.1.zip repository.sorbetto.games/repository.sorbetto.games-1.0.1.zip
+          if [ -f plugin.program.sorbetto.games-1.0.5.zip ]; then
+            git mv plugin.program.sorbetto.games-1.0.5.zip plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
+          fi
+          if [ -f repository.sorbetto.games-1.0.1.zip ]; then
+            git mv repository.sorbetto.games-1.0.1.zip repository.sorbetto.games/repository.sorbetto.games-1.0.1.zip
+          fi
 
-      - name: Extract plugin artwork to the path declared in addons.xml
+      - name: List plugin ZIP contents
+        run: unzip -l plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
+
+      - name: Extract plugin artwork if present
         run: |
-          mkdir -p plugin.program.sorbetto.games/resources/art
-          unzip -o plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip 'resources/art/*' -d plugin.program.sorbetto.games/
-          ls -R plugin.program.sorbetto.games/resources/art
+          mkdir -p /tmp/plugin_extract plugin.program.sorbetto.games/resources/art
+          unzip -o plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip -d /tmp/plugin_extract || true
+          find /tmp/plugin_extract -type f \( -name 'icon-1.0.4.png' -o -name 'background-1.0.4.png' \) -print -exec cp -v {} plugin.program.sorbetto.games/resources/art/ \; || true
+          ls -la plugin.program.sorbetto.games/resources/art || true
 
       - name: Update index.html links
         run: |
