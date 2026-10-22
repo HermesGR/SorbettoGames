@@ -14,30 +14,39 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download current repository zip
+      - name: Download current repository zip from raw GitHub
         run: |
-          curl -fsSL "https://hermesgr.github.io/SorbettoGames/repository.sorbetto.games-1.0.0.zip" -o repository.sorbetto.games-1.0.0.zip
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/SorbettoGames/main/repository.sorbetto.games-1.0.0.zip" -o repository.sorbetto.games-1.0.0.zip
+          ls -la repository.sorbetto.games-1.0.0.zip
 
       - name: Download corrected artwork from demo repository
         run: |
           curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/icon-1.0.4.png" -o icon.png
           curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/background-1.0.4.png" -o fanart.jpg
+          ls -la icon.png fanart.jpg
 
       - name: Replace repository artwork
         run: |
+          rm -rf repo_extract
           mkdir -p repo_extract
           cd repo_extract
           unzip -o ../repository.sorbetto.games-1.0.0.zip
+          echo "Before replacement:"
           find . -type f \( -name 'icon.png' -o -name 'fanart.jpg' \) -print
           find . -type f -name 'icon.png' -exec cp ../icon.png {} \;
           find . -type f -name 'fanart.jpg' -exec cp ../fanart.jpg {} \;
+          echo "After replacement:"
+          find . -type f \( -name 'icon.png' -o -name 'fanart.jpg' \) -print
+          rm -f ../repository.sorbetto.games-1.0.0.zip
           zip -r ../repository.sorbetto.games-1.0.0.zip .
           cd ..
+          ls -la repository.sorbetto.games-1.0.0.zip
 
       - name: Commit updated repository zip
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add repository.sorbetto.games-1.0.0.zip
+          git diff --cached --stat
           git commit -m "Update repository icon and fanart" || true
           git push
