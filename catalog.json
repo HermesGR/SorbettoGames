@@ -11,6 +11,24 @@
       "asset": "crash.zip"
     },
     {
+      "id": "tomb-raider",
+      "title": "Tomb Raider",
+      "category": "PlayStation 1",
+      "platform": "ps1",
+      "art_system": "Sony - PlayStation",
+      "art_title": "Tomb Raider (USA)",
+      "asset": "tomb-raider.zip"
+    },
+    {
+      "id": "gran-turismo",
+      "title": "Gran Turismo",
+      "category": "PlayStation 1",
+      "platform": "ps1",
+      "art_system": "Sony - PlayStation",
+      "art_title": "Gran Turismo (USA)",
+      "asset": "gran-turismo.zip"
+    },
+    {
       "id": "donkey-kong-country",
       "title": "Donkey Kong Country",
       "category": "Nintendo — Super Nintendo",
