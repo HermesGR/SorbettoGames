@@ -1,0 +1,40 @@
+name: Fix repository layout for Kodi
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Move add-on packages into Kodi-expected folders
+        run: |
+          mkdir -p plugin.program.sorbetto.games repository.sorbetto.games
+          git mv plugin.program.sorbetto.games-1.0.5.zip plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip
+          git mv repository.sorbetto.games-1.0.1.zip repository.sorbetto.games/repository.sorbetto.games-1.0.1.zip
+
+      - name: Extract plugin artwork to the path declared in addons.xml
+        run: |
+          mkdir -p plugin.program.sorbetto.games/resources/art
+          unzip -o plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip 'resources/art/*' -d plugin.program.sorbetto.games/
+          ls -R plugin.program.sorbetto.games/resources/art
+
+      - name: Update index.html links
+        run: |
+          sed -i 's#href="plugin.program.sorbetto.games-1.0.5.zip"#href="plugin.program.sorbetto.games/plugin.program.sorbetto.games-1.0.5.zip"#g' index.html
+          sed -i 's#href="repository.sorbetto.games-1.0.1.zip"#href="repository.sorbetto.games/repository.sorbetto.games-1.0.1.zip"#g' index.html
+          cat index.html
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Move add-on packages into Kodi-expected folders and expose artwork" || true
+          git push
