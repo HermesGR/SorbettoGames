@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <addons>
-  <addon id="plugin.program.sorbetto.games" name="SorbettoGames" version="1.0.4" provider-name="HermesGR">
+  <addon id="plugin.program.sorbetto.games" name="SorbettoGames" version="1.0.5" provider-name="HermesGR">
     <requires><import addon="xbmc.python" version="3.0.0" /></requires>
     <extension point="xbmc.python.script" library="addon.py" />
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Browse and launch lightweight retro games.</summary>
-      <description lang="en_GB">Browse games from the latest SorbettoGames GitHub Release. Downloads only the selected game and launches it through RetroArch with lightweight emulators for NES, SNES, Sega, Amiga and GBA.</description>
+      <description lang="en_GB">Browse games from the latest SorbettoGames GitHub Release. Downloads only the selected game and launches it through Kodi RetroPlayer with lightweight libretro cores for NES, SNES, Sega, Amiga and GBA.</description>
       <platform>all</platform><license>MIT</license>
       <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
     </extension>
