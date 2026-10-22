@@ -1,23 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.program.sorbetto.games" name="SorbettoGames" version="1.0.0" provider-name="HermesGR">
-  <requires><import addon="xbmc.python" version="3.0.0" /></requires>
-  <extension point="xbmc.python.script" library="addon.py" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Download and launch individually selected PlayStation games.</summary>
-    <description lang="en_GB">Browse individual game ZIP assets from the latest SorbettoGames GitHub Release. Downloads only the selected game and launches through RetroArch with PCSX-ReARMed.</description>
-    <platform>all</platform><license>MIT</license>
-    <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
-  </extension>
-</addon><addon id="repository.sorbetto.games" name="SorbettoGames Repository" version="1.0.0" provider-name="HermesGR">
-  <extension point="xbmc.addon.repository" name="SorbettoGames Repository">
-    <dir>
-      <info compressed="false">https://hermesgr.github.io/SorbettoGames/addons.xml</info>
-      <checksum>https://hermesgr.github.io/SorbettoGames/addons.xml.md5</checksum>
-      <datadir zip="true">https://hermesgr.github.io/SorbettoGames/</datadir>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">SorbettoGames add-on repository</summary><description lang="en_GB">Repository for SorbettoGames Kodi add-ons.</description>
-    <platform>all</platform><license>MIT</license><assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
-  </extension>
-</addon></addons>
+<addons>
+  <addon id="plugin.program.sorbetto.games" name="SorbettoGames" version="1.0.4" provider-name="HermesGR">
+    <requires><import addon="xbmc.python" version="3.0.0" /></requires>
+    <extension point="xbmc.python.script" library="addon.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Browse and launch lightweight retro games.</summary>
+      <description lang="en_GB">Browse games from the latest SorbettoGames GitHub Release. Downloads only the selected game and launches it through RetroArch with lightweight emulators for NES, SNES, Sega, Amiga and GBA.</description>
+      <platform>all</platform><license>MIT</license>
+      <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+    </extension>
+  </addon>
+  <addon id="repository.sorbetto.games" name="SorbettoGames Repository" version="1.0.0" provider-name="HermesGR">
+    <extension point="xbmc.addon.repository" name="SorbettoGames Repository">
+      <dir>
+        <info compressed="false">https://hermesgr.github.io/SorbettoGames/addons.xml</info>
+        <checksum>https://hermesgr.github.io/SorbettoGames/addons.xml.md5</checksum>
+        <datadir zip="true">https://hermesgr.github.io/SorbettoGames/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">SorbettoGames add-on repository</summary><description lang="en_GB">Repository for SorbettoGames Kodi add-ons.</description>
+      <platform>all</platform><license>MIT</license><assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+    </extension>
+  </addon>
+</addons>
