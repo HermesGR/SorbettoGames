@@ -1,5 +1,0 @@
-{
-  "schema": 1,
-  "games": [],
-  "instructions": "Optional: add one object per game; asset must exactly match the ZIP filename uploaded to this same GitHub Release. Without entries, the add-on automatically lists each game ZIP asset."
-}
