@@ -14,33 +14,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download current repository zip from raw GitHub
+      - name: Download current repository zip
         run: |
           curl -fsSL "https://raw.githubusercontent.com/HermesGR/SorbettoGames/main/repository.sorbetto.games-1.0.0.zip" -o repository.sorbetto.games-1.0.0.zip
-          ls -la repository.sorbetto.games-1.0.0.zip
+          unzip -l repository.sorbetto.games-1.0.0.zip
 
-      - name: Download corrected artwork from demo repository
+      - name: Download corrected artwork
         run: |
-          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/icon-1.0.4.png" -o icon.png
-          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/background-1.0.4.png" -o fanart.jpg
-          ls -la icon.png fanart.jpg
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/icon-1.0.4.png" -o new_icon.png
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/background-1.0.4.png" -o new_fanart.jpg
 
-      - name: Replace repository artwork
+      - name: Replace artwork using addon.xml names
         run: |
           rm -rf repo_extract
-          mkdir -p repo_extract
+          mkdir repo_extract
           cd repo_extract
           unzip -o ../repository.sorbetto.games-1.0.0.zip
-          echo "Before replacement:"
-          find . -type f \( -name 'icon.png' -o -name 'fanart.jpg' \) -print
-          find . -type f -name 'icon.png' -exec cp ../icon.png {} \;
-          find . -type f -name 'fanart.jpg' -exec cp ../fanart.jpg {} \;
-          echo "After replacement:"
-          find . -type f \( -name 'icon.png' -o -name 'fanart.jpg' \) -print
+          ADDON_XML=$(find . -name addon.xml | head -n 1)
+          echo "Using $ADDON_XML"
+          cat "$ADDON_XML"
+          ICON_NAME=$(grep -o '<icon>[^<]*</icon>' "$ADDON_XML" | sed 's/<icon>//;s/<\/icon>//')
+          FANART_NAME=$(grep -o '<fanart>[^<]*</fanart>' "$ADDON_XML" | sed 's/<fanart>//;s/<\/fanart>//')
+          echo "Icon file: $ICON_NAME"
+          echo "Fanart file: $FANART_NAME"
+          ICON_PATH=$(find . -type f -name "$ICON_NAME" | head -n 1)
+          FANART_PATH=$(find . -type f -name "$FANART_NAME" | head -n 1)
+          echo "Icon path: $ICON_PATH"
+          echo "Fanart path: $FANART_PATH"
+          cp ../new_icon.png "$ICON_PATH"
+          cp ../new_fanart.jpg "$FANART_PATH"
           rm -f ../repository.sorbetto.games-1.0.0.zip
           zip -r ../repository.sorbetto.games-1.0.0.zip .
-          cd ..
-          ls -la repository.sorbetto.games-1.0.0.zip
 
       - name: Commit updated repository zip
         run: |
