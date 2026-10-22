@@ -100,3 +100,5 @@ Only upload game files and other assets that you own or are authorised to distri
 - Repository: <https://github.com/HermesGR/SorbettoGames>
 - Releases: <https://github.com/HermesGR/SorbettoGames/releases>
 - Kodi repository feed: <https://hermesgr.github.io/SorbettoGames/addons.xml>
+
+<!-- pages rebuild -->
