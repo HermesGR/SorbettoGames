@@ -1,0 +1,84 @@
+name: Build and Release SorbettoGames Plugin
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download plugin source
+        run: |
+          mkdir -p plugin/program.sorbetto.games/resources/art
+          BASE=https://raw.githubusercontent.com/HermesGR/demo/main
+          curl -fsSL "$BASE/addon.py" -o plugin/program.sorbetto.games/addon.py
+          curl -fsSL "$BASE/addon.xml" -o plugin/program.sorbetto.games/addon.xml
+          curl -fsSL "$BASE/catalog.json" -o plugin/program.sorbetto.games/resources/catalog.json
+          curl -fsSL "$BASE/settings.xml" -o plugin/program.sorbetto.games/resources/settings.xml
+          curl -fsSL "$BASE/SorbettoBrowser.xml" -o plugin/program.sorbetto.games/SorbettoBrowser.xml
+          curl -fsSL "$BASE/SorbettoMenu.xml" -o plugin/program.sorbetto.games/SorbettoMenu.xml
+          curl -fsSL "$BASE/icon-1.0.4.png" -o plugin/program.sorbetto.games/resources/art/icon-1.0.4.png
+          curl -fsSL "$BASE/background-1.0.4.png" -o plugin/program.sorbetto.games/resources/art/background-1.0.4.png
+          curl -fsSL "$BASE/sorbetto-focus.png" -o plugin/program.sorbetto.games/resources/art/sorbetto-focus.png
+          curl -fsSL "$BASE/sorbetto-row.png" -o plugin/program.sorbetto.games/resources/art/sorbetto-row.png
+
+      - name: Package plugin
+        run: |
+          cd plugin
+          zip -r "../plugin.program.sorbetto.games-1.0.5.zip" program.sorbetto.games
+
+      - name: Update repository metadata
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          xml = '''<?xml version='1.0' encoding='utf-8'?>
+          <addons>
+            <addon id="plugin.program.sorbetto.games" name="SorbettoGames" version="1.0.5" provider-name="HermesGR">
+              <requires><import addon="xbmc.python" version="3.0.0" /></requires>
+              <extension point="xbmc.python.script" library="addon.py" />
+              <extension point="xbmc.addon.metadata">
+                <summary lang="en_GB">Browse and launch lightweight retro games.</summary>
+                <description lang="en_GB">Browse games from the latest SorbettoGames GitHub Release. Downloads only the selected game and launches it through Kodi RetroPlayer with lightweight libretro cores for NES, SNES, Sega, Amiga and GBA.</description>
+                <platform>all</platform><license>MIT</license>
+                <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+              </extension>
+            </addon>
+            <addon id="repository.sorbetto.games" name="SorbettoGames Repository" version="1.0.0" provider-name="HermesGR">
+              <extension point="xbmc.addon.repository" name="SorbettoGames Repository">
+                <dir>
+                  <info compressed="false">https://hermesgr.github.io/SorbettoGames/addons.xml</info>
+                  <checksum>https://hermesgr.github.io/SorbettoGames/addons.xml.md5</checksum>
+                  <datadir zip="true">https://hermesgr.github.io/SorbettoGames/</datadir>
+                </dir>
+              </extension>
+              <extension point="xbmc.addon.metadata">
+                <summary lang="en_GB">SorbettoGames add-on repository</summary><description lang="en_GB">Repository for SorbettoGames Kodi add-ons.</description>
+                <platform>all</platform><license>MIT</license><assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+              </extension>
+            </addon>
+          </addons>'''
+          open('addons.xml', 'w', encoding='utf-8').write(xml)
+          open('addons.xml.md5', 'w').write(hashlib.md5(xml.encode('utf-8')).hexdigest())
+          PY
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.5
+          name: SorbettoGames 1.0.5
+          files: plugin.program.sorbetto.games-1.0.5.zip
+
+      - name: Commit repository metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add addons.xml addons.xml.md5
+          git commit -m "Release plugin 1.0.5" || true
+          git push
