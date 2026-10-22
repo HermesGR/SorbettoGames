@@ -1,0 +1,36 @@
+name: Clean up SorbettoGames repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Remove old and unused files
+        run: |
+          git rm -f \
+            plugin.program.sorbetto.games-1.0.0.zip \
+            plugin.program.sorbetto.games-1.0.3.zip \
+            plugin.program.sorbetto.games-1.0.4.zip \
+            repository.sorbetto.games-1.0.0.zip \
+            SorbettoGames-FINAL-1.0.0.zip \
+            SorbettoGames-GitHub-Pages-1.0.0.zip \
+            addon.py \
+            addon.xml \
+            IMG_6086.png \
+            sorbetto-catalog.template.json || true
+          git status --short
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Clean up old plugin versions and unused root files" || true
+          git push
