@@ -1,0 +1,77 @@
+name: Publish 1.0.5 and verify live Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure 1.0.5 zip exists in repo
+        run: |
+          if [ ! -f plugin.program.sorbetto.games-1.0.5.zip ]; then
+            curl -fsSL "https://github.com/HermesGR/SorbettoGames/releases/download/v1.0.5/plugin.program.sorbetto.games-1.0.5.zip" -o plugin.program.sorbetto.games-1.0.5.zip
+          fi
+          unzip -t plugin.program.sorbetto.games-1.0.5.zip
+
+      - name: Write addons.xml and md5
+        run: |
+          cat > addons.xml <<'XML'
+          <?xml version='1.0' encoding='utf-8'?>
+          <addons>
+            <addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.5' provider-name='HermesGR'>
+              <requires><import addon='xbmc.python' version='3.0.0' /></requires>
+              <extension point='xbmc.python.script' library='addon.py' />
+              <extension point='xbmc.addon.metadata'>
+                <summary lang='en_GB'>RetroPlayer game browser with optional console filter</summary>
+                <description lang='en_GB'>All 15 games appear immediately, PlayStation 1 first.</description>
+                <platform>all</platform><license>MIT</license>
+                <assets><icon>resources/art/icon-1.0.4.png</icon><fanart>resources/art/background-1.0.4.png</fanart></assets>
+              </extension>
+            </addon>
+            <addon id='repository.sorbetto.games' name='SorbettoGames Repository' version='1.0.1' provider-name='HermesGR'>
+              <extension point='xbmc.addon.repository' name='SorbettoGames Repository'>
+                <dir>
+                  <info compressed='false'>https://hermesgr.github.io/SorbettoGames/addons.xml</info>
+                  <checksum>https://hermesgr.github.io/SorbettoGames/addons.xml.md5</checksum>
+                  <datadir zip='true'>https://hermesgr.github.io/SorbettoGames/</datadir>
+                </dir>
+              </extension>
+              <extension point='xbmc.addon.metadata'>
+                <summary lang='en_GB'>SorbettoGames add-on repository</summary>
+                <description lang='en_GB'>Repository for SorbettoGames Kodi add-ons.</description>
+                <platform>all</platform><license>MIT</license>
+                <assets><icon>icon.png</icon><fanart>fanart.jpg</fanart></assets>
+              </extension>
+            </addon>
+          </addons>
+          XML
+          printf '%s' "$(python3 -c "import hashlib;print(hashlib.md5(open('addons.xml','rb').read()).hexdigest(), end='')")" > addons.xml.md5
+          echo "md5: $(cat addons.xml.md5)"
+          xxd addons.xml.md5 | tail -n 1
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add plugin.program.sorbetto.games-1.0.5.zip addons.xml addons.xml.md5
+          git diff --cached --stat
+          git commit -m "Publish 1.0.5 metadata and zip" || true
+          git push
+
+      - name: Verify live Pages serves 1.0.5
+        run: |
+          sleep 120
+          for f in addons.xml addons.xml.md5 plugin.program.sorbetto.games-1.0.5.zip; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "https://hermesgr.github.io/SorbettoGames/$f")
+            echo "$f -> HTTP $code"
+          done
+          LIVE=$(curl -fsSL "https://hermesgr.github.io/SorbettoGames/addons.xml?nocache=$RANDOM")
+          echo "$LIVE" | grep -q "version='1.0.5'" && echo "RESULT: PASS - live Pages serves 1.0.5" || echo "RESULT: FAIL - live Pages still serves old metadata"
+          echo "$LIVE" | grep -o "version='[0-9.]*'" | head -n 2
