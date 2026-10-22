@@ -1,0 +1,35 @@
+name: Add plugin 1.0.5 zip to Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download 1.0.5 zip from Release
+        run: |
+          curl -fsSL "https://github.com/HermesGR/SorbettoGames/releases/download/v1.0.5/plugin.program.sorbetto.games-1.0.5.zip" -o plugin.program.sorbetto.games-1.0.5.zip
+          ls -la plugin.program.sorbetto.games-1.0.5.zip
+          unzip -t plugin.program.sorbetto.games-1.0.5.zip
+
+      - name: Commit zip to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add plugin.program.sorbetto.games-1.0.5.zip
+          git diff --cached --stat
+          git commit -m "Add plugin 1.0.5 zip for repository installation"
+          git push
+
+      - name: Verify Pages serves the zip
+        run: |
+          sleep 90
+          code=$(curl -s -o /dev/null -w "%{http_code}" "https://hermesgr.github.io/SorbettoGames/plugin.program.sorbetto.games-1.0.5.zip")
+          echo "plugin.program.sorbetto.games-1.0.5.zip -> HTTP $code"
