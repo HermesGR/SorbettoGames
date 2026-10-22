@@ -1,0 +1,43 @@
+name: Build SorbettoGames Repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download current repository zip
+        run: |
+          curl -fsSL "https://hermesgr.github.io/SorbettoGames/repository.sorbetto.games-1.0.0.zip" -o repository.sorbetto.games-1.0.0.zip
+
+      - name: Download corrected artwork from demo repository
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/icon-1.0.4.png" -o icon.png
+          curl -fsSL "https://raw.githubusercontent.com/HermesGR/demo/main/background-1.0.4.png" -o fanart.jpg
+
+      - name: Replace repository artwork
+        run: |
+          mkdir -p repo_extract
+          cd repo_extract
+          unzip -o ../repository.sorbetto.games-1.0.0.zip
+          find . -type f \( -name 'icon.png' -o -name 'fanart.jpg' \) -print
+          find . -type f -name 'icon.png' -exec cp ../icon.png {} \;
+          find . -type f -name 'fanart.jpg' -exec cp ../fanart.jpg {} \;
+          zip -r ../repository.sorbetto.games-1.0.0.zip .
+          cd ..
+
+      - name: Commit updated repository zip
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add repository.sorbetto.games-1.0.0.zip
+          git commit -m "Update repository icon and fanart" || true
+          git push
