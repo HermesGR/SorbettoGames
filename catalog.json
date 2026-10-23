@@ -162,6 +162,16 @@
       "asset": "Street.Fighter.II.-.Special.Champion.Edition.Europe.zip"
     },
     {
+      "id": "rainbow-islands-md",
+      "title": "Rainbow Islands Extra",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Rainbow Islands Extra (Japan)",
+      "asset": "Rainbow-Islands-Extra_Genesis_EN.zip",
+      "rom": "Rainbow Islands - The Story of Bubble Bobble 2 (JU) [c][!].bin"
+    },
+    {
       "id": "bobble-bubble",
       "title": "Bubble Bobble",
       "category": "Nintendo — NES",
@@ -169,15 +179,6 @@
       "art_system": "Nintendo - Nintendo Entertainment System",
       "art_title": "Bubble Bobble (USA)",
       "asset": "bubble-bobble-nes.zip"
-    },
-    {
-      "id": "rainbow-islands",
-      "title": "Rainbow Islands",
-      "category": "Nintendo — NES",
-      "platform": "nes",
-      "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Rainbow Islands (USA)",
-      "asset": "rainbow-islands-nes.zip"
     },
     {
       "id": "joe-mac",
@@ -241,6 +242,15 @@
       "art_system": "MAME",
       "art_title": "Carrier Air Wing (World 901012)",
       "asset": "cawing.zip"
+    },
+    {
+      "id": "sunset-riders",
+      "title": "Sunset Riders",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Sunset Riders (2 Players ver ABD)",
+      "asset": "ssridersabd.zip"
     }
   ]
 }
