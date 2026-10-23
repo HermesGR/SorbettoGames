@@ -108,6 +108,15 @@
       "asset": "Puzzle.Bobble.E.2.zip"
     },
     {
+      "id": "super-pang",
+      "title": "Super Pang",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Super Pang (Europe)",
+      "asset": "Super.Pang.E.zip"
+    },
+    {
       "id": "sonic",
       "title": "Sonic",
       "category": "Sega — Mega Drive",
@@ -214,15 +223,6 @@
       "art_system": "Commodore - Amiga",
       "art_title": "Blood Money",
       "asset": "blood-money.zip"
-    },
-    {
-      "id": "pang-world",
-      "title": "Pang World",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Pang (World)",
-      "asset": "pang.zip"
     }
   ]
 }
