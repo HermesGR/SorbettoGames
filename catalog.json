@@ -207,13 +207,13 @@
       "asset": "Arkanoid.zip"
     },
     {
-      "id": "double-dragon-nes",
+      "id": "double-dragon-hack",
       "title": "Double Dragon",
       "category": "Nintendo — NES",
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
       "art_title": "Double Dragon (USA)",
-      "asset": "Double.Dragon.zip"
+      "asset": "Double.Dragon.Arcade.Hack.pacnsacdave.nes"
     },
     {
       "id": "blood-money",
