@@ -74,13 +74,13 @@
       "asset": "sonic-the-hedgehog-sega.zip"
     },
     {
-      "id": "bubble-bobble-arcade",
+      "id": "bobble-bubble",
       "title": "Bubble Bobble",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Bubble Bobble (US, Ver 5.1)",
-      "asset": "bublboblr.zip"
+      "category": "Nintendo — NES",
+      "platform": "nes",
+      "art_system": "Nintendo - Nintendo Entertainment System",
+      "art_title": "Bubble Bobble (USA)",
+      "asset": "bubble-bobble-nes.zip"
     },
     {
       "id": "rainbow-islands",
