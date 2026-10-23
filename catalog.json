@@ -17,7 +17,7 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "Tomb Raider (USA)",
-      "asset": "tomb-raider.zip"
+      "asset": "Tomb.Raider.USA.zip"
     },
     {
       "id": "gran-turismo",
@@ -26,7 +26,16 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "Gran Turismo (USA)",
-      "asset": "gran-turismo.zip"
+      "asset": "Gran.Turismo.USA.zip"
+    },
+    {
+      "id": "sega-rally",
+      "title": "Sega Rally Championship",
+      "category": "Sega Saturn",
+      "platform": "saturn",
+      "art_system": "Sega - Saturn",
+      "art_title": "Sega Rally Championship (Europe) (Made in USA)",
+      "asset": "sega-rally.zip"
     },
     {
       "id": "donkey-kong-country",
