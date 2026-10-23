@@ -2,6 +2,15 @@
   "schema": 1,
   "games": [
     {
+      "id": "broken-sword",
+      "title": "Broken Sword",
+      "category": "PlayStation 1",
+      "platform": "ps1",
+      "art_system": "Sony - PlayStation",
+      "art_title": "Broken Sword - The Shadow of the Templars (Europe)",
+      "asset": "Broken.Sword.-.The.Shadow.of.the.Templars.Europe.zip"
+    },
+    {
       "id": "crash",
       "title": "Crash Bandicoot",
       "category": "PlayStation 1",
@@ -9,6 +18,15 @@
       "art_system": "Sony - PlayStation",
       "art_title": "Crash Bandicoot (USA)",
       "asset": "crash.zip"
+    },
+    {
+      "id": "nba-live-99",
+      "title": "NBA Live 99",
+      "category": "PlayStation 1",
+      "platform": "ps1",
+      "art_system": "Sony - PlayStation",
+      "art_title": "NBA Live 99 (USA)",
+      "asset": "NBA.Live.99.USA.zip"
     },
     {
       "id": "tomb-raider",
@@ -20,13 +38,288 @@
       "asset": "Tomb.Raider.USA.zip"
     },
     {
-      "id": "broken-sword",
-      "title": "Broken Sword",
-      "category": "PlayStation 1",
-      "platform": "ps1",
-      "art_system": "Sony - PlayStation",
-      "art_title": "Broken Sword - The Shadow of the Templars (Europe)",
-      "asset": "Broken.Sword.-.The.Shadow.of.the.Templars.Europe.zip"
+      "id": "bomb-jack",
+      "title": "Bomb Jack",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Bomb Jack (set 1)",
+      "asset": "bombjack.zip"
+    },
+    {
+      "id": "bubble-bobble-arcade",
+      "title": "Bubble Bobble",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Bubble Bobble (US with mode select)",
+      "asset": "bublboblr.zip"
+    },
+    {
+      "id": "cadillacs-dinosaurs",
+      "title": "Cadillacs and Dinosaurs",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Cadillacs and Dinosaurs (World 930201)",
+      "asset": "dino.zip"
+    },
+    {
+      "id": "carrier-air-wing",
+      "title": "Carrier Air Wing",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Carrier Air Wing (World 901012)",
+      "asset": "cawing.zip"
+    },
+    {
+      "id": "double-dragon-arcade",
+      "title": "Double Dragon",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Double Dragon (US Set 1)",
+      "asset": "ddragonu.zip"
+    },
+    {
+      "id": "frogger",
+      "title": "Frogger",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Frog",
+      "asset": "froggers.zip"
+    },
+    {
+      "id": "metal-slug-arcade",
+      "title": "Metal Slug",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug - Super Vehicle-001",
+      "asset": "mslug.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "metal-slug-2",
+      "title": "Metal Slug 2",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 2 - Super Vehicle-001_II (NGM-2410)(NGH-2410)",
+      "asset": "mslug2.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "metal-slug-3",
+      "title": "Metal Slug 3",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 3 (NGM-2560)",
+      "asset": "mslug3.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "metal-slug-4",
+      "title": "Metal Slug 4",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 4 (NGM-2630)",
+      "asset": "mslug4.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "metal-slug-5",
+      "title": "Metal Slug 5",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 5 (NGM-2680)",
+      "asset": "mslug5.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "ms-pac-man-arcade",
+      "title": "Ms. Pac-Man",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Ms. Pac-Man",
+      "asset": "mspacman.zip"
+    },
+    {
+      "id": "puzzle-bobble-neogeo",
+      "title": "Puzzle Bobble",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Puzzle Bobble _ Bust-A-Move (Neo-Geo) (NGM-083)",
+      "asset": "pbobblen.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
+    },
+    {
+      "id": "rainbow-islands-arcade",
+      "title": "Rainbow Islands",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Rainbow Islands (new version)",
+      "asset": "rbisland.2.zip",
+      "rom": "rbisland.zip"
+    },
+    {
+      "id": "shinobi",
+      "title": "Shinobi",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Shinobi (set 6, System 16A, unprotected)",
+      "asset": "shinobi.zip"
+    },
+    {
+      "id": "street-fighter-2-ce",
+      "title": "Street Fighter II' Champion Edition",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Street Fighter II' - Champion Edition (World 920313)",
+      "asset": "sf2ceua.zip"
+    },
+    {
+      "id": "sunset-riders",
+      "title": "Sunset Riders",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Sunset Riders (2 Players ver ABD)",
+      "asset": "ssridersabd.zip"
+    },
+    {
+      "id": "super-pang-arcade",
+      "title": "Super Pang",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Super Pang (World 900914)",
+      "asset": "spang.zip"
+    },
+    {
+      "id": "donkey-kong-country",
+      "title": "Donkey Kong Country",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Donkey Kong Country (USA)",
+      "asset": "donkey-kong-country.zip"
+    },
+    {
+      "id": "nba-jam",
+      "title": "NBA Jam Tournament Edition",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "NBA Jam - Tournament Edition (USA)",
+      "asset": "NBA.Jam.-.Tournament.Edition.USA.zip"
+    },
+    {
+      "id": "puzzle-bobble-snes",
+      "title": "Puzzle Bobble (Super Nintendo)",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Puzzle Bobble - Bust-A-Move (Europe)",
+      "asset": "Puzzle.Bobble.E.2.zip"
+    },
+    {
+      "id": "street-fighter-2-turbo",
+      "title": "Street Fighter II Turbo",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Street Fighter II Turbo (USA)",
+      "asset": "Street.Fighter.II.Turbo.USA.zip"
+    },
+    {
+      "id": "super-mario-all-stars",
+      "title": "Super Mario All-Stars",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Super Mario All-Stars (USA)",
+      "asset": "Super.Mario.All-Stars.USA.zip"
+    },
+    {
+      "id": "super-mario-world",
+      "title": "Super Mario World",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Super Mario World (USA)",
+      "asset": "super-mario-world.zip"
+    },
+    {
+      "id": "golden-axe",
+      "title": "Golden Axe",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Golden Axe (World)",
+      "asset": "Golden.Axe.World.zip"
+    },
+    {
+      "id": "mortal-kombat",
+      "title": "Mortal Kombat",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Mortal Kombat (World)",
+      "asset": "Mortal.Kombat.zip"
+    },
+    {
+      "id": "revenge-of-shinobi",
+      "title": "The Revenge of Shinobi",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Revenge of Shinobi, The (USA, Europe) (Rev B)",
+      "asset": "Revenge.of.Shinobi.The.zip"
+    },
+    {
+      "id": "sonic",
+      "title": "Sonic",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Sonic The Hedgehog (USA, Europe)",
+      "asset": "sonic-the-hedgehog-sega.zip"
+    },
+    {
+      "id": "metal-slug",
+      "title": "Metal Slug (Saturn)",
+      "category": "Sega Saturn",
+      "platform": "saturn",
+      "art_system": "Sega - Saturn",
+      "art_title": "Metal Slug - Super Vehicle-001 (Japan)",
+      "asset": "Metal.Slug.-.Super.Vehicle-001.Japan.chd",
+      "core_settings": {
+        "yabause_addon_cartridge": "1M_ram",
+        "yabause_frameskip": "enabled"
+      }
     },
     {
       "id": "sega-rally",
@@ -41,144 +334,13 @@
       }
     },
     {
-      "id": "metal-slug",
-      "title": "Metal Slug",
-      "category": "Sega Saturn",
-      "platform": "saturn",
-      "art_system": "Sega - Saturn",
-      "art_title": "Metal Slug - Super Vehicle-001 (Japan)",
-      "asset": "Metal.Slug.-.Super.Vehicle-001.Japan.chd",
-      "core_settings": {
-        "yabause_addon_cartridge": "1M_ram",
-        "yabause_frameskip": "enabled"
-      }
-    },
-    {
-      "id": "donkey-kong-country",
-      "title": "Donkey Kong Country",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Donkey Kong Country (USA)",
-      "asset": "donkey-kong-country.zip"
-    },
-    {
-      "id": "super-mario-world",
-      "title": "Super Mario World",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Super Mario World (USA)",
-      "asset": "super-mario-world.zip"
-    },
-    {
-      "id": "super-mario-all-stars",
-      "title": "Super Mario All-Stars",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Super Mario All-Stars (USA)",
-      "asset": "Super.Mario.All-Stars.USA.zip"
-    },
-    {
-      "id": "nba-jam",
-      "title": "NBA Jam Tournament Edition",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "NBA Jam - Tournament Edition (USA)",
-      "asset": "NBA.Jam.-.Tournament.Edition.USA.zip"
-    },
-    {
-      "id": "street-fighter-2-turbo",
-      "title": "Street Fighter II Turbo",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Street Fighter II Turbo (USA)",
-      "asset": "Street.Fighter.II.Turbo.USA.zip"
-    },
-    {
-      "id": "puzzle-bobble-snes",
-      "title": "Puzzle Bobble",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Puzzle Bobble - Bust-A-Move (Europe)",
-      "asset": "Puzzle.Bobble.E.2.zip"
-    },
-    {
-      "id": "super-pang",
-      "title": "Super Pang",
-      "category": "Nintendo — Super Nintendo",
-      "platform": "snes",
-      "art_system": "Nintendo - Super Nintendo Entertainment System",
-      "art_title": "Super Pang (Europe)",
-      "asset": "Super.Pang.E.zip"
-    },
-    {
-      "id": "sonic",
-      "title": "Sonic",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Sonic The Hedgehog (USA, Europe)",
-      "asset": "sonic-the-hedgehog-sega.zip"
-    },
-    {
-      "id": "golden-axe",
-      "title": "Golden Axe",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Golden Axe (World)",
-      "asset": "Golden.Axe.World.zip"
-    },
-    {
-      "id": "revenge-of-shinobi",
-      "title": "The Revenge of Shinobi",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Revenge of Shinobi, The (USA, Europe) (Rev B)",
-      "asset": "Revenge.of.Shinobi.The.zip"
-    },
-    {
-      "id": "mortal-kombat",
-      "title": "Mortal Kombat",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Mortal Kombat (World)",
-      "asset": "Mortal.Kombat.zip"
-    },
-    {
-      "id": "street-fighter-2",
-      "title": "Street Fighter II' Special Champion Edition",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Street Fighter II' - Special Champion Edition (Europe)",
-      "asset": "Street.Fighter.II.-.Special.Champion.Edition.Europe.zip"
-    },
-    {
-      "id": "rainbow-islands-md",
-      "title": "Rainbow Islands Extra",
-      "category": "Sega — Mega Drive",
-      "platform": "megadrive",
-      "art_system": "Sega - Mega Drive - Genesis",
-      "art_title": "Rainbow Islands Extra (Japan)",
-      "asset": "Rainbow-Islands-Extra_Genesis_EN.zip",
-      "rom": "Rainbow Islands - The Story of Bubble Bobble 2 (JU) [c][!].bin"
-    },
-    {
-      "id": "bobble-bubble",
-      "title": "Bubble Bobble",
+      "id": "arkanoid-nes",
+      "title": "Arkanoid",
       "category": "Nintendo — NES",
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Bubble Bobble (USA)",
-      "asset": "bubble-bobble-nes.zip"
+      "art_title": "Arkanoid (USA)",
+      "asset": "Arkanoid.zip"
     },
     {
       "id": "joe-mac",
@@ -190,24 +352,6 @@
       "asset": "joe-mac-nes.zip"
     },
     {
-      "id": "ms-pac-man",
-      "title": "Ms. Pac-Man",
-      "category": "Nintendo — NES",
-      "platform": "nes",
-      "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Ms. Pac-Man (USA) (Namco)",
-      "asset": "Ms.Pac-Man.USA.Namco.zip"
-    },
-    {
-      "id": "arkanoid-nes",
-      "title": "Arkanoid",
-      "category": "Nintendo — NES",
-      "platform": "nes",
-      "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Arkanoid (USA)",
-      "asset": "Arkanoid.zip"
-    },
-    {
       "id": "solomons-key",
       "title": "Solomon's Key",
       "category": "Nintendo — NES",
@@ -217,15 +361,6 @@
       "asset": "Solomon.s.Key.zip"
     },
     {
-      "id": "double-dragon-arcade",
-      "title": "Double Dragon",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Double Dragon (US Set 1)",
-      "asset": "ddragonu.zip"
-    },
-    {
       "id": "blood-money",
       "title": "Blood Money",
       "category": "Commodore Amiga",
@@ -233,24 +368,6 @@
       "art_system": "Commodore - Amiga",
       "art_title": "Blood Money",
       "asset": "blood-money.zip"
-    },
-    {
-      "id": "carrier-air-wing",
-      "title": "Carrier Air Wing",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Carrier Air Wing (World 901012)",
-      "asset": "cawing.zip"
-    },
-    {
-      "id": "sunset-riders",
-      "title": "Sunset Riders",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Sunset Riders (2 Players ver ABD)",
-      "asset": "ssridersabd.zip"
     }
   ]
 }
