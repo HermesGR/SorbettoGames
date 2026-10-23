@@ -132,86 +132,6 @@
       "description": "Οδήγησε τον βάτραχο σπίτι του περνώντας έναν δρόμο με αυτοκίνητα και ένα ποτάμι με κορμούς και χελώνες."
     },
     {
-      "id": "metal-slug-arcade",
-      "title": "Metal Slug",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug - Super Vehicle-001",
-      "asset": "mslug.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 1996,
-      "genre": "Run & gun",
-      "developer": "Nazca",
-      "description": "Οι Marco και Tarma πολεμούν τον στρατό του στρατηγού Morden με το τανκ Metal Slug."
-    },
-    {
-      "id": "metal-slug-2",
-      "title": "Metal Slug 2",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug 2 - Super Vehicle-001_II (NGM-2410)(NGH-2410)",
-      "asset": "mslug2.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 1998,
-      "genre": "Run & gun",
-      "developer": "SNK",
-      "description": "Ο Morden επιστρέφει με εξωγήινους συμμάχους· νέοι παίκτες, οχήματα και μεταμορφώσεις."
-    },
-    {
-      "id": "metal-slug-3",
-      "title": "Metal Slug 3",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug 3 (NGM-2560)",
-      "asset": "mslug3.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 2000,
-      "genre": "Run & gun",
-      "developer": "SNK",
-      "description": "Η πιο φημισμένη συνέχεια: διακλαδιζόμενες διαδρομές, ζόμπι, γιγάντια καβούρια και τελική μάχη στο διάστημα."
-    },
-    {
-      "id": "metal-slug-4",
-      "title": "Metal Slug 4",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug 4 (NGM-2630)",
-      "asset": "mslug4.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 2002,
-      "genre": "Run & gun",
-      "developer": "Mega Enterprise",
-      "description": "Οι Marco και Fio με τους νέους Nadia και Trevor εναντίον της τρομοκρατικής οργάνωσης Amadeus."
-    },
-    {
-      "id": "metal-slug-5",
-      "title": "Metal Slug 5",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug 5 (NGM-2680)",
-      "asset": "mslug5.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 2003,
-      "genre": "Run & gun",
-      "developer": "SNK Playmore",
-      "description": "Η ομάδα κυνηγά την οργάνωση Ptolemaic που έκλεψε τα σχέδια του Metal Slug· προστίθεται η γλίστρα."
-    },
-    {
       "id": "ms-pac-man-arcade",
       "title": "Ms. Pac-Man",
       "category": "Arcade",
@@ -520,6 +440,88 @@
       "genre": "Shoot ’em up (οριζόντιο)",
       "developer": "DMA Design",
       "description": "Shoot ’em up σε τέσσερις κόσμους· οι εχθροί αφήνουν χρήματα για αναβαθμίσεις στα καταστήματα."
+    }
+  ],
+  "hidden": [
+    {
+      "id": "metal-slug-arcade",
+      "title": "Metal Slug",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug - Super Vehicle-001",
+      "asset": "mslug.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 1996,
+      "genre": "Run & gun",
+      "developer": "Nazca",
+      "description": "Οι Marco και Tarma πολεμούν τον στρατό του στρατηγού Morden με το τανκ Metal Slug."
+    },
+    {
+      "id": "metal-slug-2",
+      "title": "Metal Slug 2",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 2 - Super Vehicle-001_II (NGM-2410)(NGH-2410)",
+      "asset": "mslug2.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 1998,
+      "genre": "Run & gun",
+      "developer": "SNK",
+      "description": "Ο Morden επιστρέφει με εξωγήινους συμμάχους· νέοι παίκτες, οχήματα και μεταμορφώσεις."
+    },
+    {
+      "id": "metal-slug-3",
+      "title": "Metal Slug 3",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 3 (NGM-2560)",
+      "asset": "mslug3.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 2000,
+      "genre": "Run & gun",
+      "developer": "SNK",
+      "description": "Η πιο φημισμένη συνέχεια: διακλαδιζόμενες διαδρομές, ζόμπι, γιγάντια καβούρια και τελική μάχη στο διάστημα."
+    },
+    {
+      "id": "metal-slug-4",
+      "title": "Metal Slug 4",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 4 (NGM-2630)",
+      "asset": "mslug4.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 2002,
+      "genre": "Run & gun",
+      "developer": "Mega Enterprise",
+      "description": "Οι Marco και Fio με τους νέους Nadia και Trevor εναντίον της τρομοκρατικής οργάνωσης Amadeus."
+    },
+    {
+      "id": "metal-slug-5",
+      "title": "Metal Slug 5",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Metal Slug 5 (NGM-2680)",
+      "asset": "mslug5.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 2003,
+      "genre": "Run & gun",
+      "developer": "SNK Playmore",
+      "description": "Η ομάδα κυνηγά την οργάνωση Ptolemaic που έκλεψε τα σχέδια του Metal Slug· προστίθεται η γλίστρα."
     }
   ]
 }
