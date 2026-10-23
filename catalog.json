@@ -207,6 +207,15 @@
       "asset": "Arkanoid.zip"
     },
     {
+      "id": "solomons-key",
+      "title": "Solomon's Key",
+      "category": "Nintendo — NES",
+      "platform": "nes",
+      "art_system": "Nintendo - Nintendo Entertainment System",
+      "art_title": "Solomon's Key (USA)",
+      "asset": "Solomon.s.Key.zip"
+    },
+    {
       "id": "double-dragon-arcade",
       "title": "Double Dragon",
       "category": "Arcade",
@@ -223,6 +232,15 @@
       "art_system": "Commodore - Amiga",
       "art_title": "Blood Money",
       "asset": "blood-money.zip"
+    },
+    {
+      "id": "carrier-air-wing",
+      "title": "Carrier Air Wing",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Carrier Air Wing (World 901012)",
+      "asset": "cawing.zip"
     }
   ]
 }

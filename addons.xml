@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.39' provider-name='HermesGR'>
+<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.40' provider-name='HermesGR'>
   <requires><import addon='xbmc.python' version='3.0.0' /><import addon='game.libretro.pcsx-rearmed' version='0.0.1' /><import addon='game.libretro.snes9x2010' version='0.0.1' /><import addon='game.libretro.picodrive' version='0.0.1' /><import addon='game.libretro.fceumm' version='0.0.1' /><import addon='game.libretro.uae' version='0.0.1' /><import addon='game.libretro.fbneo' version='0.0.1' /></requires>
   <extension point='xbmc.python.script' library='addon.py' />
   <extension point='xbmc.addon.metadata'>
     <summary lang='en_GB'>RetroPlayer game browser with optional console filter</summary>
-    <description lang='en_GB'>All 24 games appear immediately, PlayStation 1 first. Lightweight emulators installed and tuned automatically on first launch. Square controller icon and original 16:9 tech background. Prepared for Windows x86_64 / Kodi 21.3; device testing required. No ROMs included.</description>
+    <description lang='en_GB'>All 26 games appear immediately, PlayStation 1 first. Lightweight emulators installed and tuned automatically on first launch. Square controller icon and original 16:9 tech background. Prepared for Windows x86_64 / Kodi 21.3; device testing required. No ROMs included.</description>
     <platform>all</platform><license>MIT</license>
     <assets><icon>resources/art/icon-1.0.4.png</icon><fanart>resources/art/background-1.0.4.png</fanart></assets>
   </extension>
