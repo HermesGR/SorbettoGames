@@ -74,6 +74,42 @@
       "asset": "sonic-the-hedgehog-sega.zip"
     },
     {
+      "id": "golden-axe",
+      "title": "Golden Axe",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Golden Axe (World)",
+      "asset": "Golden.Axe.World.zip"
+    },
+    {
+      "id": "revenge-of-shinobi",
+      "title": "The Revenge of Shinobi",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Revenge of Shinobi, The (USA, Europe) (Rev B)",
+      "asset": "Revenge.of.Shinobi.The.zip"
+    },
+    {
+      "id": "mortal-kombat",
+      "title": "Mortal Kombat",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Mortal Kombat (World)",
+      "asset": "Mortal.Kombat.zip"
+    },
+    {
+      "id": "street-fighter-2",
+      "title": "Street Fighter II' Special Champion Edition",
+      "category": "Sega — Mega Drive",
+      "platform": "megadrive",
+      "art_system": "Sega - Mega Drive - Genesis",
+      "art_title": "Street Fighter II' - Special Champion Edition (Europe)",
+      "asset": "Street.Fighter.II.-.Special.Champion.Edition.Europe.zip"
+    },
+    {
       "id": "bobble-bubble",
       "title": "Bubble Bobble",
       "category": "Nintendo — NES",
