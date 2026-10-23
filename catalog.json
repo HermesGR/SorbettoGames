@@ -35,7 +35,10 @@
       "platform": "saturn",
       "art_system": "Sega - Saturn",
       "art_title": "Sega Rally Championship (Europe) (Made in USA)",
-      "asset": "sega-rally.zip"
+      "asset": "sega-rally.zip",
+      "core_settings": {
+        "yabause_frameskip": "disabled"
+      }
     },
     {
       "id": "metal-slug",
@@ -46,7 +49,8 @@
       "art_title": "Metal Slug - Super Vehicle-001 (Japan)",
       "asset": "Metal.Slug.-.Super.Vehicle-001.Japan.chd",
       "core_settings": {
-        "yabause_addon_cartridge": "1M_ram"
+        "yabause_addon_cartridge": "1M_ram",
+        "yabause_frameskip": "enabled"
       }
     },
     {

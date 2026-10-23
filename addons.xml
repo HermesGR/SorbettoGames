@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.33' provider-name='HermesGR'>
+<addon id='plugin.program.sorbetto.games' name='SorbettoGames' version='1.0.34' provider-name='HermesGR'>
   <requires><import addon='xbmc.python' version='3.0.0' /><import addon='game.libretro.pcsx-rearmed' version='0.0.1' /><import addon='game.libretro.snes9x2010' version='0.0.1' /><import addon='game.libretro.picodrive' version='0.0.1' /><import addon='game.libretro.fceumm' version='0.0.1' /><import addon='game.libretro.uae' version='0.0.1' /><import addon='game.libretro.fbneo' version='0.0.1' /></requires>
   <extension point='xbmc.python.script' library='addon.py' />
   <extension point='xbmc.addon.metadata'>
