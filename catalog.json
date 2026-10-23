@@ -56,6 +56,15 @@
       "asset": "super-mario-world.zip"
     },
     {
+      "id": "super-mario-all-stars",
+      "title": "Super Mario All-Stars",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Super Mario All-Stars (USA)",
+      "asset": "super-mario-all-stars.zip"
+    },
+    {
       "id": "sonic",
       "title": "Sonic",
       "category": "Sega — Mega Drive",
@@ -106,7 +115,7 @@
       "category": "Arcade",
       "platform": "arcade",
       "art_system": "MAME",
-      "art_title": "Pac-Man",
+      "art_title": "Pac-Man (Midway)",
       "asset": "pac-man.zip"
     },
     {
@@ -119,12 +128,21 @@
       "asset": "pang-world.zip"
     },
     {
+      "id": "puzzle-bobble",
+      "title": "Puzzle Bobble",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Puzzle Bobble (Japan, B-System)",
+      "asset": "puzzle-bobble.zip"
+    },
+    {
       "id": "nba-jam",
       "title": "NBA Jam",
       "category": "Arcade",
       "platform": "arcade",
       "art_system": "MAME",
-      "art_title": "NBA Jam",
+      "art_title": "NBA Jam (rev 3.01 04-07-93)",
       "asset": "nba-jam.zip"
     },
     {
@@ -133,7 +151,7 @@
       "category": "Arcade",
       "platform": "arcade",
       "art_system": "MAME",
-      "art_title": "Metal Slug",
+      "art_title": "Metal Slug - Super Vehicle-001",
       "asset": "metal-slug.zip"
     },
     {
@@ -151,7 +169,7 @@
       "category": "Arcade",
       "platform": "arcade",
       "art_system": "MAME",
-      "art_title": "Street Fighter",
+      "art_title": "Street Fighter (World)",
       "asset": "street-fighter.zip"
     },
     {
@@ -160,7 +178,7 @@
       "category": "Arcade",
       "platform": "arcade",
       "art_system": "MAME",
-      "art_title": "Double Dragon",
+      "art_title": "Double Dragon (World)",
       "asset": "double-dragon.zip"
     }
   ]
