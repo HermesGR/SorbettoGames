@@ -20,6 +20,15 @@
       "asset": "Tomb.Raider.USA.zip"
     },
     {
+      "id": "broken-sword",
+      "title": "Broken Sword",
+      "category": "PlayStation 1",
+      "platform": "ps1",
+      "art_system": "Sony - PlayStation",
+      "art_title": "Broken Sword - The Shadow of the Templars (Europe)",
+      "asset": "Broken.Sword.-.The.Shadow.of.the.Templars.Europe.zip"
+    },
+    {
       "id": "sega-rally",
       "title": "Sega Rally Championship",
       "category": "Sega Saturn",
@@ -27,6 +36,18 @@
       "art_system": "Sega - Saturn",
       "art_title": "Sega Rally Championship (Europe) (Made in USA)",
       "asset": "sega-rally.zip"
+    },
+    {
+      "id": "metal-slug",
+      "title": "Metal Slug",
+      "category": "Sega Saturn",
+      "platform": "saturn",
+      "art_system": "Sega - Saturn",
+      "art_title": "Metal Slug - Super Vehicle-001 (Japan)",
+      "asset": "Metal.Slug.-.Super.Vehicle-001.Japan.chd",
+      "core_settings": {
+        "yabause_addon_cartridge": "1M_ram"
+      }
     },
     {
       "id": "donkey-kong-country",
@@ -171,18 +192,6 @@
       "art_system": "MAME",
       "art_title": "Puzzle Bobble (Japan, B-System)",
       "asset": "pbobble.zip"
-    },
-    {
-      "id": "metal-slug",
-      "title": "Metal Slug",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Metal Slug - Super Vehicle-001",
-      "asset": "mslug.zip",
-      "bios": [
-        "neogeo.zip"
-      ]
     },
     {
       "id": "arkanoid",
