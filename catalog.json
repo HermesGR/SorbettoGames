@@ -86,6 +86,24 @@
       "asset": "NBA.Jam.-.Tournament.Edition.USA.zip"
     },
     {
+      "id": "street-fighter-2-turbo",
+      "title": "Street Fighter II Turbo",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Street Fighter II Turbo (USA)",
+      "asset": "Street.Fighter.II.Turbo.USA.zip"
+    },
+    {
+      "id": "puzzle-bobble-snes",
+      "title": "Puzzle Bobble",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "Puzzle Bobble - Bust-A-Move (Europe)",
+      "asset": "Puzzle.Bobble.E.zip"
+    },
+    {
       "id": "sonic",
       "title": "Sonic",
       "category": "Sega — Mega Drive",
@@ -158,6 +176,33 @@
       "asset": "joe-mac-nes.zip"
     },
     {
+      "id": "ms-pac-man",
+      "title": "Ms. Pac-Man",
+      "category": "Nintendo — NES",
+      "platform": "nes",
+      "art_system": "Nintendo - Nintendo Entertainment System",
+      "art_title": "Ms. Pac-Man (USA) (Namco)",
+      "asset": "Ms.Pac-Man.USA.Namco.zip"
+    },
+    {
+      "id": "arkanoid-nes",
+      "title": "Arkanoid",
+      "category": "Nintendo — NES",
+      "platform": "nes",
+      "art_system": "Nintendo - Nintendo Entertainment System",
+      "art_title": "Arkanoid (USA)",
+      "asset": "Arkanoid.zip"
+    },
+    {
+      "id": "battletoads-double-dragon",
+      "title": "Battletoads & Double Dragon",
+      "category": "Nintendo — NES",
+      "platform": "nes",
+      "art_system": "Nintendo - Nintendo Entertainment System",
+      "art_title": "Battletoads-Double Dragon (USA)",
+      "asset": "Battletoads-Double.Dragon.USA.zip"
+    },
+    {
       "id": "blood-money",
       "title": "Blood Money",
       "category": "Commodore Amiga",
@@ -167,15 +212,6 @@
       "asset": "blood-money.zip"
     },
     {
-      "id": "pac-man",
-      "title": "Pac-Man",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Pac-Man (Midway)",
-      "asset": "pac-man.zip"
-    },
-    {
       "id": "pang-world",
       "title": "Pang World",
       "category": "Arcade",
@@ -183,42 +219,6 @@
       "art_system": "MAME",
       "art_title": "Pang (World)",
       "asset": "pang.zip"
-    },
-    {
-      "id": "puzzle-bobble",
-      "title": "Puzzle Bobble",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Puzzle Bobble (Japan, B-System)",
-      "asset": "pbobble.zip"
-    },
-    {
-      "id": "arkanoid",
-      "title": "Arkanoid",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Arkanoid (World)",
-      "asset": "arkanoid.zip"
-    },
-    {
-      "id": "street-fighter",
-      "title": "Street Fighter",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Street Fighter (World)",
-      "asset": "street-fighter.zip"
-    },
-    {
-      "id": "double-dragon",
-      "title": "Double Dragon",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Double Dragon (World)",
-      "asset": "double-dragon.zip"
     }
   ]
 }
