@@ -207,13 +207,13 @@
       "asset": "Arkanoid.zip"
     },
     {
-      "id": "battletoads-double-dragon",
-      "title": "Battletoads & Double Dragon",
+      "id": "double-dragon-nes",
+      "title": "Double Dragon",
       "category": "Nintendo — NES",
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Battletoads-Double Dragon (USA)",
-      "asset": "Battletoads-Double.Dragon.USA.zip"
+      "art_title": "Double Dragon (USA)",
+      "asset": "Double.Dragon.zip"
     },
     {
       "id": "blood-money",
