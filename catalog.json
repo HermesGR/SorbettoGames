@@ -145,22 +145,6 @@
       "description": "Η Ms. Pac-Man τρώει τις κουκκίδες σε τέσσερις λαβυρίνθους αποφεύγοντας τα φαντάσματα — πιο έξυπνα από του αρχικού."
     },
     {
-      "id": "puzzle-bobble-neogeo",
-      "title": "Puzzle Bobble",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "Puzzle Bobble _ Bust-A-Move (Neo-Geo) (NGM-083)",
-      "asset": "pbobblen.zip",
-      "bios": [
-        "neogeo.zip"
-      ],
-      "year": 1994,
-      "genre": "Παζλ",
-      "developer": "Taito",
-      "description": "Οι Bub και Bob ρίχνουν χρωματιστές φούσκες· τρεις ίδιες μαζί σκάνε."
-    },
-    {
       "id": "rainbow-islands-arcade",
       "title": "Rainbow Islands",
       "category": "Arcade",
@@ -522,6 +506,22 @@
       "genre": "Run & gun",
       "developer": "SNK Playmore",
       "description": "Η ομάδα κυνηγά την οργάνωση Ptolemaic που έκλεψε τα σχέδια του Metal Slug· προστίθεται η γλίστρα."
+    },
+    {
+      "id": "puzzle-bobble-neogeo",
+      "title": "Puzzle Bobble",
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Puzzle Bobble _ Bust-A-Move (Neo-Geo) (NGM-083)",
+      "asset": "pbobblen.zip",
+      "bios": [
+        "neogeo.zip"
+      ],
+      "year": 1994,
+      "genre": "Παζλ",
+      "developer": "Taito",
+      "description": "Οι Bub και Bob ρίχνουν χρωματιστές φούσκες· τρεις ίδιες μαζί σκάνε."
     }
   ]
 }
