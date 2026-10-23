@@ -20,15 +20,6 @@
       "asset": "Tomb.Raider.USA.zip"
     },
     {
-      "id": "gran-turismo",
-      "title": "Gran Turismo",
-      "category": "PlayStation 1",
-      "platform": "ps1",
-      "art_system": "Sony - PlayStation",
-      "art_title": "Gran Turismo (USA)",
-      "asset": "Gran.Turismo.USA.zip"
-    },
-    {
       "id": "sega-rally",
       "title": "Sega Rally Championship",
       "category": "Sega Saturn",
@@ -62,7 +53,16 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Super Mario All-Stars (USA)",
-      "asset": "super-mario-all-stars.zip"
+      "asset": "Super.Mario.All-Stars.USA.zip"
+    },
+    {
+      "id": "nba-jam",
+      "title": "NBA Jam Tournament Edition",
+      "category": "Nintendo — Super Nintendo",
+      "platform": "snes",
+      "art_system": "Nintendo - Super Nintendo Entertainment System",
+      "art_title": "NBA Jam - Tournament Edition (USA)",
+      "asset": "NBA.Jam.-.Tournament.Edition.USA.zip"
     },
     {
       "id": "sonic",
@@ -74,13 +74,13 @@
       "asset": "sonic-the-hedgehog-sega.zip"
     },
     {
-      "id": "bobble-bubble",
+      "id": "bubble-bobble-arcade",
       "title": "Bubble Bobble",
-      "category": "Nintendo — NES",
-      "platform": "nes",
-      "art_system": "Nintendo - Nintendo Entertainment System",
-      "art_title": "Bubble Bobble (USA)",
-      "asset": "bubble-bobble-nes.zip"
+      "category": "Arcade",
+      "platform": "arcade",
+      "art_system": "MAME",
+      "art_title": "Bubble Bobble (US, Ver 5.1)",
+      "asset": "bublboblr.zip"
     },
     {
       "id": "rainbow-islands",
@@ -125,7 +125,7 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Pang (World)",
-      "asset": "pang-world.zip"
+      "asset": "pang.zip"
     },
     {
       "id": "puzzle-bobble",
@@ -134,16 +134,7 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Puzzle Bobble (Japan, B-System)",
-      "asset": "puzzle-bobble.zip"
-    },
-    {
-      "id": "nba-jam",
-      "title": "NBA Jam",
-      "category": "Arcade",
-      "platform": "arcade",
-      "art_system": "MAME",
-      "art_title": "NBA Jam (rev 3.01 04-07-93)",
-      "asset": "nba-jam.zip"
+      "asset": "pbobble.zip"
     },
     {
       "id": "metal-slug",
@@ -152,7 +143,10 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Metal Slug - Super Vehicle-001",
-      "asset": "metal-slug.zip"
+      "asset": "mslug.zip",
+      "bios": [
+        "neogeo.zip"
+      ]
     },
     {
       "id": "arkanoid",
