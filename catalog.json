@@ -8,7 +8,11 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "Broken Sword - The Shadow of the Templars (Europe)",
-      "asset": "Broken.Sword.-.The.Shadow.of.the.Templars.Europe.zip"
+      "asset": "Broken.Sword.-.The.Shadow.of.the.Templars.Europe.zip",
+      "year": 1996,
+      "genre": "Περιπέτεια (point & click)",
+      "developer": "Revolution Software",
+      "description": "Ο Αμερικανός George Stobbart βρίσκεται στο Παρίσι τη στιγμή μιας έκρηξης σε καφέ και μπλέκεται σε μια συνωμοσία γύρω από τους Ναΐτες Ιππότες."
     },
     {
       "id": "crash",
@@ -17,7 +21,11 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "Crash Bandicoot (USA)",
-      "asset": "crash.zip"
+      "asset": "crash.zip",
+      "year": 1996,
+      "genre": "Πλατφόρμες",
+      "developer": "Naughty Dog",
+      "description": "Ο Crash διασχίζει τα νησιά Wumpa για να σταματήσει τον Dr. Neo Cortex και να σώσει την Tawna."
     },
     {
       "id": "nba-live-99",
@@ -26,7 +34,11 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "NBA Live 99 (USA)",
-      "asset": "NBA.Live.99.USA.zip"
+      "asset": "NBA.Live.99.USA.zip",
+      "year": 1998,
+      "genre": "Αθλητικό (μπάσκετ)",
+      "developer": "EA Sports",
+      "description": "Μπάσκετ NBA με ομάδες και παίκτες της σεζόν 1998-99."
     },
     {
       "id": "tomb-raider",
@@ -35,7 +47,11 @@
       "platform": "ps1",
       "art_system": "Sony - PlayStation",
       "art_title": "Tomb Raider (USA)",
-      "asset": "Tomb.Raider.USA.zip"
+      "asset": "Tomb.Raider.USA.zip",
+      "year": 1996,
+      "genre": "Δράση / Περιπέτεια",
+      "developer": "Core Design",
+      "description": "Η αρχαιολόγος Lara Croft εξερευνά τάφους σε Περού, Ελλάδα, Αίγυπτο και Ατλαντίδα αναζητώντας τα κομμάτια του Scion."
     },
     {
       "id": "bomb-jack",
@@ -44,7 +60,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Bomb Jack (set 1)",
-      "asset": "bombjack.zip"
+      "asset": "bombjack.zip",
+      "year": 1984,
+      "genre": "Πλατφόρμες",
+      "developer": "Tehkan",
+      "description": "Ο Jack πηδά και πετά μαζεύοντας τις βόμβες κάθε πίστας πριν τον πιάσουν οι εχθροί."
     },
     {
       "id": "bubble-bobble-arcade",
@@ -53,7 +73,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Bubble Bobble (US with mode select)",
-      "asset": "bublboblr.zip"
+      "asset": "bublboblr.zip",
+      "year": 1986,
+      "genre": "Πλατφόρμες",
+      "developer": "Taito",
+      "description": "Οι δεινοσαυράκοι Bub και Bob παγιδεύουν τους εχθρούς σε φούσκες για να σώσουν τις φίλες τους — καλύτερα με δύο παίκτες."
     },
     {
       "id": "cadillacs-dinosaurs",
@@ -62,7 +86,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Cadillacs and Dinosaurs (World 930201)",
-      "asset": "dino.zip"
+      "asset": "dino.zip",
+      "year": 1993,
+      "genre": "Beat ’em up",
+      "developer": "Capcom",
+      "description": "Ο Jack Tenrec και οι φίλοι του προστατεύουν τους δεινόσαυρους από λαθροκυνηγούς σε έναν κόσμο του μέλλοντος."
     },
     {
       "id": "carrier-air-wing",
@@ -71,7 +99,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Carrier Air Wing (World 901012)",
-      "asset": "cawing.zip"
+      "asset": "cawing.zip",
+      "year": 1990,
+      "genre": "Shoot ’em up (οριζόντιο)",
+      "developer": "Capcom",
+      "description": "Πιλότος μαχητικού του Ναυτικού σε αποστολές εναντίον μιας τρομοκρατικής οργάνωσης."
     },
     {
       "id": "double-dragon-arcade",
@@ -80,7 +112,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Double Dragon (US Set 1)",
-      "asset": "ddragonu.zip"
+      "asset": "ddragonu.zip",
+      "year": 1987,
+      "genre": "Beat ’em up",
+      "developer": "Technōs Japan",
+      "description": "Οι αδελφοί Billy και Jimmy Lee κυνηγούν τη συμμορία που απήγαγε τη Marian."
     },
     {
       "id": "frogger",
@@ -89,7 +125,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Frog",
-      "asset": "froggers.zip"
+      "asset": "froggers.zip",
+      "year": 1981,
+      "genre": "Δράση",
+      "developer": "Konami",
+      "description": "Οδήγησε τον βάτραχο σπίτι του περνώντας έναν δρόμο με αυτοκίνητα και ένα ποτάμι με κορμούς και χελώνες."
     },
     {
       "id": "metal-slug-arcade",
@@ -101,7 +141,11 @@
       "asset": "mslug.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 1996,
+      "genre": "Run & gun",
+      "developer": "Nazca",
+      "description": "Οι Marco και Tarma πολεμούν τον στρατό του στρατηγού Morden με το τανκ Metal Slug."
     },
     {
       "id": "metal-slug-2",
@@ -113,7 +157,11 @@
       "asset": "mslug2.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 1998,
+      "genre": "Run & gun",
+      "developer": "SNK",
+      "description": "Ο Morden επιστρέφει με εξωγήινους συμμάχους· νέοι παίκτες, οχήματα και μεταμορφώσεις."
     },
     {
       "id": "metal-slug-3",
@@ -125,7 +173,11 @@
       "asset": "mslug3.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 2000,
+      "genre": "Run & gun",
+      "developer": "SNK",
+      "description": "Η πιο φημισμένη συνέχεια: διακλαδιζόμενες διαδρομές, ζόμπι, γιγάντια καβούρια και τελική μάχη στο διάστημα."
     },
     {
       "id": "metal-slug-4",
@@ -137,7 +189,11 @@
       "asset": "mslug4.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 2002,
+      "genre": "Run & gun",
+      "developer": "Mega Enterprise",
+      "description": "Οι Marco και Fio με τους νέους Nadia και Trevor εναντίον της τρομοκρατικής οργάνωσης Amadeus."
     },
     {
       "id": "metal-slug-5",
@@ -149,7 +205,11 @@
       "asset": "mslug5.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 2003,
+      "genre": "Run & gun",
+      "developer": "SNK Playmore",
+      "description": "Η ομάδα κυνηγά την οργάνωση Ptolemaic που έκλεψε τα σχέδια του Metal Slug· προστίθεται η γλίστρα."
     },
     {
       "id": "ms-pac-man-arcade",
@@ -158,7 +218,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Ms. Pac-Man",
-      "asset": "mspacman.zip"
+      "asset": "mspacman.zip",
+      "year": 1982,
+      "genre": "Λαβύρινθος",
+      "developer": "Midway",
+      "description": "Η Ms. Pac-Man τρώει τις κουκκίδες σε τέσσερις λαβυρίνθους αποφεύγοντας τα φαντάσματα — πιο έξυπνα από του αρχικού."
     },
     {
       "id": "puzzle-bobble-neogeo",
@@ -170,7 +234,11 @@
       "asset": "pbobblen.zip",
       "bios": [
         "neogeo.zip"
-      ]
+      ],
+      "year": 1994,
+      "genre": "Παζλ",
+      "developer": "Taito",
+      "description": "Οι Bub και Bob ρίχνουν χρωματιστές φούσκες· τρεις ίδιες μαζί σκάνε."
     },
     {
       "id": "rainbow-islands-arcade",
@@ -180,7 +248,11 @@
       "art_system": "MAME",
       "art_title": "Rainbow Islands (new version)",
       "asset": "rbisland.2.zip",
-      "rom": "rbisland.zip"
+      "rom": "rbisland.zip",
+      "year": 1987,
+      "genre": "Πλατφόρμες",
+      "developer": "Taito",
+      "description": "Η συνέχεια του Bubble Bobble: ο Bub ανεβαίνει επτά νησιά φτιάχνοντας ουράνια τόξα για σκαλιά και όπλο."
     },
     {
       "id": "shinobi",
@@ -189,7 +261,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Shinobi (set 6, System 16A, unprotected)",
-      "asset": "shinobi.zip"
+      "asset": "shinobi.zip",
+      "year": 1987,
+      "genre": "Δράση / Πλατφόρμες",
+      "developer": "Sega",
+      "description": "Ο νίντζα Joe Musashi σώζει τα παιδιά-ομήρους της οργάνωσης Zeed με σουρικέν, σπαθί και μαγεία."
     },
     {
       "id": "street-fighter-2-ce",
@@ -198,7 +274,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Street Fighter II' - Champion Edition (World 920313)",
-      "asset": "sf2ceua.zip"
+      "asset": "sf2ceua.zip",
+      "year": 1992,
+      "genre": "Μάχες (ένας εναντίον ενός)",
+      "developer": "Capcom",
+      "description": "Η βελτιωμένη έκδοση του Street Fighter II: πιο γρήγορη και με τα τέσσερα αφεντικά να μπορούν να επιλεγούν."
     },
     {
       "id": "sunset-riders",
@@ -207,7 +287,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Sunset Riders (2 Players ver ABD)",
-      "asset": "ssridersabd.zip"
+      "asset": "ssridersabd.zip",
+      "year": 1991,
+      "genre": "Run & gun",
+      "developer": "Konami",
+      "description": "Κυνηγοί επικηρυγμένων στην Άγρια Δύση συλλαμβάνουν τους καταζητούμενους έναν έναν."
     },
     {
       "id": "super-pang-arcade",
@@ -216,7 +300,11 @@
       "platform": "arcade",
       "art_system": "MAME",
       "art_title": "Super Pang (World 900914)",
-      "asset": "spang.zip"
+      "asset": "spang.zip",
+      "year": 1990,
+      "genre": "Δράση / Παζλ",
+      "developer": "Mitchell",
+      "description": "Σπάσε τα μπαλόνια με το καμάκι· κάθε μπαλόνι σπάει σε δύο μικρότερα."
     },
     {
       "id": "donkey-kong-country",
@@ -225,7 +313,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Donkey Kong Country (USA)",
-      "asset": "donkey-kong-country.zip"
+      "asset": "donkey-kong-country.zip",
+      "year": 1994,
+      "genre": "Πλατφόρμες",
+      "developer": "Rare",
+      "description": "Ο Donkey Kong και ο Diddy παίρνουν πίσω τις μπανάνες που έκλεψε ο King K. Rool."
     },
     {
       "id": "nba-jam",
@@ -234,7 +326,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "NBA Jam - Tournament Edition (USA)",
-      "asset": "NBA.Jam.-.Tournament.Edition.USA.zip"
+      "asset": "NBA.Jam.-.Tournament.Edition.USA.zip",
+      "year": 1995,
+      "genre": "Αθλητικό (μπάσκετ 2 εναντίον 2)",
+      "developer": "Iguana Entertainment",
+      "description": "Μπάσκετ δύο εναντίον δύο με υπερβολικά καρφώματα και κωδικούς για κρυφούς παίκτες."
     },
     {
       "id": "puzzle-bobble-snes",
@@ -243,7 +339,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Puzzle Bobble - Bust-A-Move (Europe)",
-      "asset": "Puzzle.Bobble.E.2.zip"
+      "asset": "Puzzle.Bobble.E.2.zip",
+      "year": 1995,
+      "genre": "Παζλ",
+      "developer": "Taito",
+      "description": "Οι Bub και Bob ρίχνουν χρωματιστές φούσκες· τρεις ίδιες μαζί σκάνε."
     },
     {
       "id": "street-fighter-2-turbo",
@@ -252,7 +352,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Street Fighter II Turbo (USA)",
-      "asset": "Street.Fighter.II.Turbo.USA.zip"
+      "asset": "Street.Fighter.II.Turbo.USA.zip",
+      "year": 1993,
+      "genre": "Μάχες (ένας εναντίον ενός)",
+      "developer": "Capcom",
+      "description": "Η έκδοση Turbo με ρυθμιζόμενη ταχύτητα και τα τέσσερα αφεντικά διαθέσιμα."
     },
     {
       "id": "super-mario-all-stars",
@@ -261,7 +365,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Super Mario All-Stars (USA)",
-      "asset": "Super.Mario.All-Stars.USA.zip"
+      "asset": "Super.Mario.All-Stars.USA.zip",
+      "year": 1993,
+      "genre": "Πλατφόρμες",
+      "developer": "Nintendo",
+      "description": "Τα Super Mario Bros. 1, 2, 3 και The Lost Levels σε ανανεωμένα γραφικά 16-bit."
     },
     {
       "id": "super-mario-world",
@@ -270,7 +378,11 @@
       "platform": "snes",
       "art_system": "Nintendo - Super Nintendo Entertainment System",
       "art_title": "Super Mario World (USA)",
-      "asset": "super-mario-world.zip"
+      "asset": "super-mario-world.zip",
+      "year": 1990,
+      "genre": "Πλατφόρμες",
+      "developer": "Nintendo",
+      "description": "Ο Mario με τον Yoshi στο Dinosaur Land, για να σώσουν την Princess Peach από τον Bowser."
     },
     {
       "id": "golden-axe",
@@ -279,7 +391,11 @@
       "platform": "megadrive",
       "art_system": "Sega - Mega Drive - Genesis",
       "art_title": "Golden Axe (World)",
-      "asset": "Golden.Axe.World.zip"
+      "asset": "Golden.Axe.World.zip",
+      "year": 1989,
+      "genre": "Beat ’em up",
+      "developer": "Sega",
+      "description": "Τρεις ήρωες με σπαθιά και μαγεία εναντίον του Death Adder για τη χρυσή αξίνα."
     },
     {
       "id": "mortal-kombat",
@@ -288,7 +404,11 @@
       "platform": "megadrive",
       "art_system": "Sega - Mega Drive - Genesis",
       "art_title": "Mortal Kombat (World)",
-      "asset": "Mortal.Kombat.zip"
+      "asset": "Mortal.Kombat.zip",
+      "year": 1993,
+      "genre": "Μάχες (ένας εναντίον ενός)",
+      "developer": "Midway / Probe",
+      "description": "Το τουρνουά του Shang Tsung: επτά μαχητές και τα περίφημα fatalities."
     },
     {
       "id": "revenge-of-shinobi",
@@ -297,7 +417,11 @@
       "platform": "megadrive",
       "art_system": "Sega - Mega Drive - Genesis",
       "art_title": "Revenge of Shinobi, The (USA, Europe) (Rev B)",
-      "asset": "Revenge.of.Shinobi.The.zip"
+      "asset": "Revenge.of.Shinobi.The.zip",
+      "year": 1989,
+      "genre": "Δράση / Πλατφόρμες",
+      "developer": "Sega",
+      "description": "Ο Joe Musashi εκδικείται την οργάνωση Neo Zeed που σκότωσε τον δάσκαλό του και απήγαγε τη Naoko."
     },
     {
       "id": "sonic",
@@ -306,7 +430,11 @@
       "platform": "megadrive",
       "art_system": "Sega - Mega Drive - Genesis",
       "art_title": "Sonic The Hedgehog (USA, Europe)",
-      "asset": "sonic-the-hedgehog-sega.zip"
+      "asset": "sonic-the-hedgehog-sega.zip",
+      "year": 1991,
+      "genre": "Πλατφόρμες",
+      "developer": "Sonic Team",
+      "description": "Ο Sonic τρέχει με ιλιγγιώδη ταχύτητα για να ελευθερώσει τα ζώα από τον Dr. Robotnik."
     },
     {
       "id": "metal-slug",
@@ -319,7 +447,11 @@
       "core_settings": {
         "yabause_addon_cartridge": "1M_ram",
         "yabause_frameskip": "enabled"
-      }
+      },
+      "year": 1997,
+      "genre": "Run & gun",
+      "developer": "SNK",
+      "description": "Το πρώτο Metal Slug στο Sega Saturn (ιαπωνική έκδοση)."
     },
     {
       "id": "sega-rally",
@@ -331,7 +463,11 @@
       "asset": "sega-rally.zip",
       "core_settings": {
         "yabause_frameskip": "disabled"
-      }
+      },
+      "year": 1995,
+      "genre": "Αγώνες ταχύτητας (ράλι)",
+      "developer": "Sega AM3",
+      "description": "Ράλι σε χώμα, άσφαλτο και χιόνι με Toyota Celica και Lancia Delta."
     },
     {
       "id": "arkanoid-nes",
@@ -340,7 +476,11 @@
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
       "art_title": "Arkanoid (USA)",
-      "asset": "Arkanoid.zip"
+      "asset": "Arkanoid.zip",
+      "year": 1986,
+      "genre": "Δράση (σπάσιμο τούβλων)",
+      "developer": "Taito",
+      "description": "Κατεύθυνε το διαστημόπλοιο Vaus για να σπάσεις όλα τα τούβλα κάθε επιπέδου."
     },
     {
       "id": "joe-mac",
@@ -349,7 +489,11 @@
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
       "art_title": "Joe _ Mac (USA)",
-      "asset": "joe-mac-nes.zip"
+      "asset": "joe-mac-nes.zip",
+      "year": 1992,
+      "genre": "Πλατφόρμες",
+      "developer": "Elite Systems",
+      "description": "Δύο προϊστορικοί ήρωες σώζουν τις γυναίκες της φυλής τους από αντίπαλη φυλή και δεινόσαυρους."
     },
     {
       "id": "solomons-key",
@@ -358,7 +502,11 @@
       "platform": "nes",
       "art_system": "Nintendo - Nintendo Entertainment System",
       "art_title": "Solomon's Key (USA)",
-      "asset": "Solomon.s.Key.zip"
+      "asset": "Solomon.s.Key.zip",
+      "year": 1986,
+      "genre": "Παζλ / Πλατφόρμες",
+      "developer": "Tecmo",
+      "description": "Ο μάγος Dana φτιάχνει και σπάει πέτρες για να φτάσει στο κλειδί και την πόρτα κάθε δωματίου."
     },
     {
       "id": "blood-money",
@@ -367,7 +515,11 @@
       "platform": "amiga",
       "art_system": "Commodore - Amiga",
       "art_title": "Blood Money",
-      "asset": "blood-money.zip"
+      "asset": "blood-money.zip",
+      "year": 1989,
+      "genre": "Shoot ’em up (οριζόντιο)",
+      "developer": "DMA Design",
+      "description": "Shoot ’em up σε τέσσερις κόσμους· οι εχθροί αφήνουν χρήματα για αναβαθμίσεις στα καταστήματα."
     }
   ]
 }
